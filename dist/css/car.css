@@ -1,0 +1,303 @@
+.toubu {
+  width: 1536px;
+  height: 150px; }
+  .toubu .toubu-top {
+    width: 1536px;
+    height: 30px;
+    background: #333; }
+    .toubu .toubu-top .min {
+      width: 1200px;
+      height: 30px;
+      margin: 0 auto; }
+      .toubu .toubu-top .min .min-right {
+        float: right;
+        width: 391px;
+        height: 30px; }
+        .toubu .toubu-top .min .min-right ul {
+          display: flex;
+          justify-content: space-around; }
+          .toubu .toubu-top .min .min-right ul li {
+            height: 30px;
+            flex: 33%;
+            font-size: 12px;
+            color: #fff;
+            line-height: 30px; }
+  .toubu .toubu-bottom {
+    width: 1536px;
+    height: 80px; }
+    .toubu .toubu-bottom .xmin {
+      width: 990px;
+      height: 80px;
+      margin: 0 auto;
+      background: #000000; }
+      .toubu .toubu-bottom .xmin .toubu-logo a {
+        display: block;
+        vertical-align: middle;
+        float: left;
+        width: 180px;
+        height: 50px;
+        background-image: url(../img/logo.png);
+        background-repeat: no-repeat;
+        margin-top: 4%; }
+      .toubu .toubu-bottom .xmin p {
+        color: #FFFFCC;
+        float: left;
+        width: 80px;
+        font-size: 14px;
+        line-height: 80px;
+        margin-left: 20px; }
+
+.carlist {
+  width: 1536px; }
+  .carlist .carlist-top {
+    width: 992px;
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid #ececec; }
+    .carlist .carlist-top .carlist-top-left {
+      width: 82.9px;
+      height: 50px;
+      float: left;
+      color: #c80000;
+      font-size: 16px;
+      margin-left: 22px;
+      line-height: 50px;
+      border-bottom: 2px solid #c80000; }
+      .carlist .carlist-top .carlist-top-left .a {
+        padding-left: 7px; }
+  .carlist .carlist-min {
+    width: 990px;
+    height: 38px;
+    background: cornsilk;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: #f9f9f9; }
+    .carlist .carlist-min .dev {
+      width: 990px;
+      height: 38px;
+      padding: 0 22px; }
+      .carlist .carlist-min .dev .quanxuan {
+        width: 55px;
+        height: 37.6px;
+        float: left; }
+        .carlist .carlist-min .dev .quanxuan span {
+          padding-left: 10px;
+          color: #7f7f7f;
+          font-size: 12px;
+          line-height: 37.6px; }
+      .carlist .carlist-min .dev .shangpin {
+        width: 472px;
+        height: 37.6px;
+        float: left; }
+        .carlist .carlist-min .dev .shangpin span {
+          color: #7f7f7f;
+          line-height: 38px;
+          text-align: center;
+          display: block;
+          font-size: 12px; }
+      .carlist .carlist-min .dev .danjian {
+        width: 90px;
+        height: 37.6px;
+        float: left; }
+        .carlist .carlist-min .dev .danjian span {
+          color: #7f7f7f;
+          line-height: 38px;
+          text-align: center;
+          display: block;
+          font-size: 12px; }
+      .carlist .carlist-min .dev .shuliang {
+        width: 122px;
+        height: 37.6px;
+        float: left;
+        color: #7f7f7f;
+        line-height: 38px;
+        text-align: center;
+        display: block;
+        font-size: 12px; }
+    .carlist .carlist-min .xiaoji {
+      width: 114px;
+      height: 37.6px;
+      float: left; }
+      .carlist .carlist-min .xiaoji span {
+        color: #7f7f7f;
+        line-height: 38px;
+        text-align: center;
+        display: block;
+        font-size: 12px; }
+    .carlist .carlist-min .caozuo {
+      width: 92px;
+      height: 37.6px;
+      float: left; }
+      .carlist .carlist-min .caozuo span {
+        color: #7f7f7f;
+        line-height: 38px;
+        text-align: center;
+        display: block;
+        font-size: 12px; }
+  .carlist .carlist-bot {
+    width: 100%;
+    height: 50px; }
+    .carlist .carlist-bot .zong {
+      width: 990px;
+      height: 50px;
+      margin: 0 auto;
+      margin-top: 10px; }
+      .carlist .carlist-bot .zong .right {
+        width: 426.83px;
+        height: 50px;
+        float: right; }
+        .carlist .carlist-bot .zong .right .text {
+          line-height: 50px;
+          color: #666666;
+          display: block;
+          float: left; }
+        .carlist .carlist-bot .zong .right .text1 {
+          width: 100px;
+          line-height: 50px;
+          color: #f01e00;
+          font-size: 18px;
+          padding: 0 12px;
+          display: block;
+          float: left; }
+          .carlist .carlist-bot .zong .right .text1 p {
+            float: left; }
+        .carlist .carlist-bot .zong .right button {
+          display: block;
+          float: right;
+          width: 130px;
+          height: 50px;
+          line-height: 50px;
+          background: red;
+          color: #fff;
+          text-align: center;
+          font-size: 18px;
+          border: none; }
+  .carlist .xuanran {
+    width: 990px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid #ececec; }
+    .carlist .xuanran .xuanran-top {
+      width: 936px;
+      height: 36px;
+      margin: 0 auto;
+      border-bottom: dotted 1px #ECECEC; }
+      .carlist .xuanran .xuanran-top span {
+        float: left;
+        color: #fff;
+        background: #d90204;
+        line-height: 18px;
+        margin-top: 9px;
+        width: 54px;
+        text-align: center;
+        border-radius: 3px;
+        font-size: 12px; }
+    .carlist .xuanran .xuanran-bot {
+      width: 100%; }
+      .carlist .xuanran .xuanran-bot .xuan-shangpin {
+        width: 502px;
+        height: 72px;
+        float: left;
+        margin-top: 20px; }
+        .carlist .xuanran .xuanran-bot .xuan-shangpin .s1 {
+          width: 70px;
+          height: 70px;
+          border: gainsboro 1px solid;
+          float: left;
+          margin-left: 70px; }
+          .carlist .xuanran .xuanran-bot .xuan-shangpin .s1 img {
+            width: 70px;
+            height: 70px; }
+        .carlist .xuanran .xuanran-bot .xuan-shangpin .s2 {
+          margin-left: 10px;
+          float: left;
+          font-size: 12px;
+          color: #333; }
+      .carlist .xuanran .xuanran-bot .xuan-danjia {
+        width: 90px;
+        height: 20px;
+        float: left;
+        margin-top: 20px;
+        padding-left: 30px; }
+        .carlist .xuanran .xuanran-bot .xuan-danjia .pr {
+          height: 20px;
+          line-height: 20px;
+          padding: 0 20px;
+          text-align: right; }
+          .carlist .xuanran .xuanran-bot .xuan-danjia .pr span {
+            color: #333;
+            font-size: 12px; }
+      .carlist .xuanran .xuanran-bot .xuan-shuliang {
+        width: 122px;
+        height: 53px;
+        float: left;
+        margin-top: 20px; }
+        .carlist .xuanran .xuanran-bot .xuan-shuliang .xuan-shuliang-top {
+          width: 80px;
+          height: 26px;
+          border: 1px solid #ececec;
+          margin: 0 auto;
+          margin-left: 40px; }
+          .carlist .xuanran .xuanran-bot .xuan-shuliang .xuan-shuliang-top .jian {
+            width: 24px;
+            height: 18.4px;
+            float: left;
+            margin-left: 8px; }
+            .carlist .xuanran .xuanran-bot .xuan-shuliang .xuan-shuliang-top .jian span {
+              color: #7f7f7f;
+              font-size: 16px;
+              font-weight: bold; }
+          .carlist .xuanran .xuanran-bot .xuan-shuliang .xuan-shuliang-top .num {
+            width: 24px;
+            height: 26px;
+            float: left; }
+            .carlist .xuanran .xuanran-bot .xuan-shuliang .xuan-shuliang-top .num span {
+              width: 100%;
+              height: 26px;
+              line-height: 26px;
+              color: #666;
+              font-size: 12px;
+              font-weight: bold;
+              text-align: center; }
+          .carlist .xuanran .xuanran-bot .xuan-shuliang .xuan-shuliang-top .jia {
+            width: 24px;
+            height: 18.4px;
+            float: left; }
+            .carlist .xuanran .xuanran-bot .xuan-shuliang .xuan-shuliang-top .jia span {
+              color: #7f7f7f;
+              font-size: 16px;
+              font-weight: bold; }
+        .carlist .xuanran .xuanran-bot .xuan-shuliang .xuan-shuliang-bot {
+          height: 20px;
+          line-height: 20px;
+          text-align: center;
+          margin-top: 5px; }
+          .carlist .xuanran .xuanran-bot .xuan-shuliang .xuan-shuliang-bot span {
+            color: #333;
+            font-size: 12px; }
+      .carlist .xuanran .xuanran-bot .xuan-xiaoji {
+        width: 114px;
+        height: auto;
+        float: left; }
+        .carlist .xuanran .xuanran-bot .xuan-xiaoji .xiaoji {
+          height: 20px;
+          line-height: 20px;
+          text-align: center;
+          margin-top: 20px;
+          margin-left: 14px; }
+          .carlist .xuanran .xuanran-bot .xuan-xiaoji .xiaoji span {
+            color: #c80000;
+            font-size: 12px; }
+      .carlist .xuanran .xuanran-bot .xuan-caozuo {
+        width: 92px;
+        height: auto;
+        float: left; }
+        .carlist .xuanran .xuanran-bot .xuan-caozuo .shanchu {
+          line-height: 20px;
+          text-align: center;
+          margin: 0 auto;
+          margin-top: 20px;
+          margin-left: 32px; }
+          .carlist .xuanran .xuanran-bot .xuan-caozuo .shanchu a span {
+            color: #666;
+            font-size: 12px; }

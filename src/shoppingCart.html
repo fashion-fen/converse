@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <link rel="stylesheet" href="./css/car.css">
+		  <link rel="stylesheet" href="bootstrap4.3.1/css/bootstrap.min.css" >
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="index.html"><img src="img/logo.png"/></a> 
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+					
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav mr-auto">
+					      
+					      <li class="nav-item active">
+					        <a class="nav-link" href="#"> <span class="icon3">您的购物车</span></a>
+					      </li>
+					      
+					    </ul>
+					  </div> 
+					</nav> 
+	
+  <div class="carlist">
+  <div class="carlist-top">
+    <div class="carlist-top-left">
+      <div class="a">全部商品</div>
+    </div>
+  </div>
+  <div class="carlist-min">
+  <div class="dev">
+      <div class="quanxuan">
+        <span>全选</span>
+      </div>
+      <div class="shangpin">
+        <span>商品</span>
+      </div>
+      <div class="danjian">
+          <span>单价（元）</span>
+      </div>
+      <div class="shuliang">
+          <span>数量</span>
+      </div>
+      <div class="xiaoji">
+          <span>小计（元）</span>
+      </div>
+      <div class="caozuo">
+          <span>操作</span>
+      </div>
+  </div>
+  </div>
+   <div id="xuanran">
+    
+   </div>
+   
+
+  <div class="carlist-bot">
+   <div class="zong">
+     <div class="right">
+       <span class="text">
+        总计（不含运费）： 
+       </span>
+       <span class="text1">
+          <font>￥</font>
+          <p class="zonghe"></p>
+       </span>
+       <button>
+         结算
+       </button>
+     </div>
+   </div>
+  </div>
+</div>
+		</div>
+	</body>
+	<script src="js/shoppingTrolley.js"></script>
+	<script>
+		var cart=new Car;
+		var carlist = cart.getCar();
+		
+		var xuanran=document.getElementById('xuanran');
+		  var srt=``;
+		  for(var i=0; i<carlist.length;i++){
+		  	
+		  	srt+=`
+		  	<div class="xuanran">
+     <div class="xuanran-top">
+       
+     </div>
+     <div class="xuanran-bot">
+        <div class="xuan-shangpin">
+               <div class="s1">
+                 <img src=${carlist[i].img}>
+               </div>
+               <div class="s2">
+                  ${carlist[i].title}					
+               </div>
+             </div>
+             <div class="xuan-danjia">
+               <div class="pr">
+                 <span>${carlist[i].price}</span>
+               </div>
+             </div>
+             <div class="xuan-shuliang">
+               <div class="xuan-shuliang-top">
+                 <div class="jian">
+                    <span></span>
+                 </div>
+                 <div class="num">
+                    <span>${carlist[i].number}</span>
+                 </div>
+                 <div class="jia">
+                    <span></span>
+                 </div>
+               </div>
+               <div class="xuan-shuliang-bot">
+                  <span>有货</span>
+               </div>
+             </div>
+             <div class="xuan-xiaoji">
+               <div class="xiaoji">
+                 <span class="xiao">${carlist[i].number*carlist[i].price}</span>
+               </div>
+             </div>
+             <div class="xuan-caozuo">
+               <div class="shanchu">
+                 <a href="#">
+                  <span onclick="del('${carlist[i].id}')">删除</span>
+                 </a>
+               </div>
+             </div>
+            </div>
+     
+   </div>
+		  	`;
+		  	
+		xuanran.innerHTML=srt;
+		
+		  }
+		document.querySelector('.text1').innerHTML=cart.getTotalPrice()
+		function del(id){
+			if(!confirm('确认删除？')){
+			     return;
+			   }
+			
+			   if(cart.delGoods(id)){
+			     
+			     location.reload();
+			   }else{
+			     alert('删除失败')
+			   }
+					}
+		
+		
+		
+	</script>
+</html>

@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" href="bootstrap4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="swiper/css/swiper.min.css"/>
+    <title>匡威</title>
+    
+  </head>
+  <body>
+    <!-- 头部 ---->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#"><img src="img/logo.png"/></a> 
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+					
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav mr-auto">
+					      <li class="nav-item active">
+					        <a class="nav-link" href="#">
+					        	<b class="yonghu"></b>
+					         <span class="names">
+					         	<b class="denglv"> 登录</b>/
+					         <b class="zhuche">注册</b>
+					         </span>
+					         <span class="tuichu">退出</span>
+					        	<span class="icon1"> 1</span></a>
+					      </li>
+					      <li class="nav-item active">
+					        <a class="nav-link " href="http://localhost/wrong_question/project/dist/shoppingCart.html">购物车<span class="icon2">0</span></a>
+					      </li>
+					      <li class="nav-item active">
+					        <a class="nav-link" href="#"> <span class="icon3"></span></a>
+					      </li>
+					      <li class="nav-item active">
+					        <a class="nav-link" href="#"> <span class="icon4"></span></a>
+					      </li>
+					      <li class="nav-item active">
+					        <a class="nav-link" href="#"> <span class="icon5"></span></a>
+					      </li>
+					    </ul>
+					  </div> 
+					</nav> 
+					<!--登录框-->
+					
+					
+					<div class="dlkuang">
+					  	<div class="row container-dl">
+					  		<div class="memberlogin">
+					  			<dl>
+					  				<dt>还未注册?</dt>
+					  				<dd class="button">注册账户</dd>
+					  			</dl>
+					  		</div>
+					  		 <div class="fenGe"></div>
+					  		 <div class="memberloginDl">
+					  		 	   <div class="show"></div>
+					  		 	<dl>
+					  				<dt>已经成为会员？</dt>
+					  				<dd class="accountname">
+					  					<input type="text" name="loginName" placeholder="邮箱/手机" class="zhanghao"/>
+					  					<span class="error">请输入有效的电子邮箱/手机号码！</span>
+					  				</dd>
+					  				<dd class="accountpassword">
+					  					<input type="password" name="loginPWD" placeholder="账户密码"  class="mima"/>
+					  					<span class="error">密码必须在6-12个字符之间！</span>
+					  				</dd>
+					  			</dl>
+					  			
+					  			 <div class="yanzheng">
+					  			 	 <div class="row">
+					  			 	 	<div class="geetest_radar">
+					  			 	 		<div class="geetest_ring"></div>
+					  			 	 		
+					  			 	 	</div>
+					  			 	 	点击按钮进行验证
+					  			 	 </div>
+					  			 </div>
+					  			  <div class="xieyi">
+					  		   	<input type="checkbox" class="xieyi1"/>
+					  		   	<span>一旦登录，即表明您同意匡威更新的 隐私政策 和 使用规则 </span>
+					  		   </div>
+					  		   <div class="denglv-btn">
+					  		   	登录
+					  		   </div>
+					  		   <div class="chosen">
+					  		   	<input type="checkbox"  />
+					  		   	记住登录名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					  		   	&nbsp;&nbsp;&nbsp;&nbsp;忘记密码？
+					  		   </div>
+					  		   
+					  		 </div>
+					  		   
+					  		  
+					  	</div>
+					  </div>
+					  
+					  
+					 <!--登录框-->
+					 
+					 <!--注册框-->
+					 
+					 <div class="zhuchek">
+					 	<div class="bbb"></div>
+					 	<div class="container" id="zhuce">
+					 		 <ul class="row" >
+					 		 	<li>
+					 		 		用户名*
+					 		 		<div class="labelbox" id="yonghu">
+					 		 			<input type="text"   placeholder="用户名"/>
+					 		 			<span id="pand"></span>
+					 		 		</div>
+					 		 	</li>
+					 		 	
+					 		 	<li>
+					 		 		邮箱*
+					 		 		<div class="labelbox" id="email">
+					 		 			<input type="text"   placeholder="example@converse.com"/>
+					 		 			<span id="pandEmail"></span>
+					 		 		</div>
+					 		 	</li>
+					 		 	
+					 		 	<li class="mg0">
+					 		 		性别*
+					 		 		<input type="hidden" name="gender"  value="男的"/>
+					 		 		<div class="labelbox-hidden">
+					 		 			
+					 		 				<input type="checkbox" class="nan"/>
+					 		 				男的
+					 		 			
+					 		 			
+					 		 				<input type="checkbox"  class="nan"/>
+					 		 				女的
+					 		 			
+					 		 		</div>
+					 		 	</li>
+					 		 </ul>
+					 		 
+					 		  <ul class="row">
+					 		 	<li>
+					 		 		输入密码*
+					 		 		<div class="labelbox" id="password1">
+					 		 			<input type="password" autocomplete="new-password"  placeholder="密码至少为6位字符"/>
+					 		 			<span id="pandPass"></span>
+					 		 		</div>
+					 		 	</li>
+					 		 	
+					 		 	<li>
+					 		 		确认密码*
+					 		 		<div class="labelbox" id="password2">
+					 		 			<input type="password" autocomplete="new-password"  placeholder="密码至少为6位字符"/>
+					 		 			<span id="pandPass2"></span>
+					 		 		</div>
+					 		 	</li>
+					 		 	
+					 		 	<li class="mg0">
+					 		 		生日（年-月-日）*
+					 		 	</li>
+					 		 </ul>
+					 		 
+					 		 <ul class="row">
+					 		 	<li>
+					 		 		 <div class="yanzheng">
+					  			 	 <div class="row">
+					  			 	 	<div class="geetest_radar">
+					  			 	 		<div class="geetest_ring"></div>
+					  			 	 		
+					  			 	 	</div>
+					  			 	 	点击按钮进行验证
+					  			 	 </div>
+					  			 </div>
+					 		 	</li>
+					 		 	
+					 		 	<li>
+					 		 		短信验证码*
+					 		 		<div class="mgt5">
+					 		 			<input type="text" class="yanzhengma" placeholder='请忽略' />
+					 		 			<span class="span">发送短信验证码</span>
+					 		 		</div>
+					 		 	</li>
+					 		 	
+					 		 	<li class="mg0" >
+					 		 		<div class="xieyi">
+					  		   	<input type="checkbox" class="xieyi1" id="checkbox"/>
+					  		   	<span>一旦登录，即表明您同意匡威更新的 隐私政策 和 使用规则 </span>
+					  		   </div>
+					  		   
+					 		 		<div class="button" id="button">
+					 		 			注册账户
+					 		 		</div>
+					 		 	</li>
+					 		 </ul>
+					 		 
+					 	</div>
+					 </div>
+					 
+					 <!--注册框--end-->
+
+<!-- 二级导航 -->
+	<div class="container-fluid text-center">
+		<ul class="row">
+			<li class="col-md list">男的<span></span></li>
+			<li class="col-md">女的<span></span></li>
+			<li class="col-md">童的<span></span></p></li>
+			<li class="col-md">联名合作款<span></span></li>
+			<li class="col-md">店铺分布<span></span></li>
+		</ul>
+	</div>
+	<!-- 二级导航 -->
+	<!--男的-->
+	<div class="ying">
+		 <div class="container-yin">
+		 	<div class="rows" >
+		 		<ul id="list3">
+		 			
+		 		</ul>
+		 	</div>
+		 </div>
+		 <div class="container-yin">
+		 	<div class="rows" >
+		 		<ul id="list3">
+		 			
+		 		</ul>
+		 	</div>
+		 </div>
+	</div>
+	
+	
+	<!--男的-->
+	
+	<!-- 头部 ---->
+   
+			
+  <!------ 轮播图---------->
+    
+    	<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><a href="#"><img src="//image.converse.com.cn/static/kv/pc/mbb_kv_pc_191118.jpg"/></a></div>
+			        <div class="swiper-slide"><a href="#"><img src="//image.converse.com.cn/static/kv/pc/pleasure_kv_pc_191208.jpg"/></a></div>
+			        <div class="swiper-slide"><a href="#"><img src="//image.converse.com.cn/static/kv/pc/batman_ctm_kv_pc_191122.png"/></a></div>
+			       <div class="swiper-slide"><a href="#"><img src="//image.converse.com.cn/static/kv/pc/outwear_kv_pc_191114.jpg"/></a></div>
+			        <div class="swiper-slide"><a href="#"><img src="//image.converse.com.cn/static/kv/pc/mountain_tech_kv_pc_191113.png"/></a></div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			    
+			    <!-- 如果需要导航按钮 -->
+			    <div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>
+			    
+			    <!-- 如果需要滚动条 -->
+			    <div class="swiper-scrollbar"></div>
+				</div>
+    
+  
+  <!------ 轮播图--end-------->
+  
+  <!-- 热卖单品---->
+  
+  <div id="category">
+  	<div class="container " >
+  		 <div class=" category-title">
+  	  <div class="title"></div>
+  	 	<h1>热卖单品</h1>
+  	 	
+			  	<ul class="row" id="list">
+			  			
+			  	</ul>
+			  	
+			  	  <div class="brand-menu">
+			  	  	
+			  	  </div>
+			  	  
+			  	  
+			  	  <div class="list-slide">
+			  	  	<div class="container text-center" >
+			  	  	 <div class="row" id="list1"></div>	
+			  	  	</div>
+			 
+			  	  	<div class="viewAll-button">
+			  	  		<a href="#" class="vle-imgs">查看所有男的踩的最新商品<span class="vle-span"></span></a>	
+			  	  	</div>
+			  	  </div> 
+  			</div>
+  	</div>
+  </div>
+   <!-- 热卖单品--end-->
+   
+   
+   <!--新品热推 -->
+ 
+  <div id="category">
+  	<div class="container " >
+  		 <div class=" category-title">
+  	  <div class="title"></div>
+  	 	<h1>新品热销</h1>
+  					<div class="list-slide">
+			  	  	<div class="container text-center" >
+			  	  	 <div class="row" id="list2"></div>	
+			  	  	</div>
+			  	  </div> 
+  			</div>
+  	</div>
+  </div>
+   
+   <!--新品热推 --end-->
+   
+   
+   <!--街头先型-->
+   
+   <div class="specialfeature-title">
+   	<div class="container" >
+   		<div class="row specialfeature-top">
+   			<img src="img/logo-icon.png" class="img-logo"/>
+   			<span>街头先型</span>
+   		</div>
+   		
+   		
+   		<div class="row">
+   			<figure class="figure figure1">
+				  <img src="img/PC_1-CT70_191120.jpg" class="figure-img img-fluid rounded figure2" alt="...">
+				  <h1>复古系列 旧日时光</h1>
+				  <p>查看更多<span></span></p>
+				</figure>
+				<figure class="figure figure3">
+				  <img src="img/PC_2-SOHO_191120.jpg" class="figure-img img-fluid rounded" alt="...">
+				  <h1>机能风上线 挑战无止境</h1>
+				  <p>查看更多<span></span></p>
+				</figure>
+   		</div>
+   	</div>
+   </div>
+   
+   <!--街头先型--end-->
+   
+   
+   <!-- 至酷精选 玩转潮流-->
+   <div class="specialfeature-bottom">
+   	<div class="container" >
+   		<div class="row specialfeature-top">
+   			<img src="img/logo-icon.png" class="img-logo"/>
+   			<span>至酷精选 玩转潮流</span>
+   		</div>
+   		
+   		
+   		<div class="row">
+   			<figure class="figure ">
+				  <img src="img/PC_3-CTASboot_191120.jpg" class="figure-img img-fluid rounded figure1" alt="...">
+				  <h1>造型兼备 勇战酷寒</h1>
+				  <p>查看更多<span></span></p>
+				</figure>
+				<figure class="figure figure-top">
+				  <img src="img/PC_4-JP_191120.jpg" class="figure-img img-fluid rounded figure1" alt="...">
+				  <h1>迷彩印花 城市丛林</h1>
+				  <p>查看更多<span></span></p>
+				</figure>
+				<figure class="figure figure-top">
+				  <img src="img/PC_5-Outerwear_191120.jpg" class="figure-img img-fluid rounded figure1" alt="...">
+				  <h1>外套当道 跨越寒冬</h1>
+				  <p>查看更多<span></span></p>
+				</figure>
+   		</div>
+   	</div>
+   </div>
+   
+   <!-- 至酷精选 玩转潮流-->
+   
+   
+   <!--关注匡威-->
+   <div class="sitemap ">
+   	<div class="container-fluid text-center">
+   		<h1>关注CONVERSE</h1>
+   		<p>Converse同时活跃在各类社交网络平台，点击下列你所喜爱的常用社交平台，密切关注Converse的最新产品与资讯。&gt;</p>
+   		 <div class="information-link">
+   		 	<a href="#" class="weibo"></a>
+   		 	<a href="#" class="weixin"></a>
+   		 </div>
+   	</div>
+   </div>
+   <!--关注匡威--end-->
+    <script src="jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="bootstrap4.3.1/js/bootstrap.min.js" ></script>
+    <script src="swiper/js/swiper.min.js"></script>
+    <script src="js/list.js"></script>
+  	<script src="js/index.js"></script>
+  	<script src="js/register.js"></script>
+  	<script src="js/base.js"></script>
+  	<script src="js/shoppingTrolley.js"></script>
+  	<script>
+  			var cart=new Car;
+
+				function box(index){
+					console.log(index)
+					
+					var product=list2[index]
+					product.number=1
+					cart.getCar(product);
+					cart.addToCar(product);
+					
+				}
+				
+				function numArr(){
+			var arr = JSON.parse(localStorage.getItem('cartlist'))
+			var num= 0
+		
+			for(var i=0 ; i<arr.length;i++){
+				num+=arr[i].number
+			}
+			
+			return num
+		}
+			$('.icon2').html(numArr())	
+			
+			
+			$('.list').on('mouseover',function(){
+				$('.ying').fadeIn(3000);
+			})
+			
+			$('.list').on('mouseout',function(){
+				$('.ying').fadeOut(3000);
+			})
+  	</script>
+  </body>
+</html>
